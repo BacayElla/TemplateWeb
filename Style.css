@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee
+}
+
+.container .card {
+    height: 500px;
+    width: 800px;
+    background-color: rgb(228, 215, 215);
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden
+}
+
+.container .card .form {
+    width: 100%;
+    height: 100%;
+    display: flex
+}
+
+.container .card .left-side {
+    width: 50%;
+    background-color: #fff;
+    height: 100%
+}
+.container .card .right-side {
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    height: 100%
+}
+.cover_image {
+    position: relative
+}
+.cover_image img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%
+}
+
+@media (max-width:750px) {
+    .container .card {
+        max-width: 350px
+    }
+
+    .container .card .right-side {
+        display: none
+    }
+
+    .container .card .left-side {
+        width: 50%
+    }
+
+}
+h1{
+    text-align: center;
+}
+.social {
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+    
+}
+.social span {
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 3px;
+    cursor: pointer
+}
+.social span a {
+    color: rgb(4, 0, 255);
+    font-size: 15px;
+    text-align: center;
+    margin-top: 3px
+}
+.social span a :hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+    -ms-transform: scale(2.0); 
+    -webkit-transform: scale(2.0);
+    transform: scale(2.0); 
+color: aqua;  
+}
+ 
