@@ -62,13 +62,49 @@
     }
 
 }
-h1{
-    text-align: center;
+.typewriter{
+    padding-left: 20px;
+    margin: 30px auto;
+    text-align: right;
 }
+.typewriter h1 {
+
+    width: 11ch;
+    animation: typing 2s steps(10), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+ 
+}
+
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  .qoutes{
+margin-right: 20px;
+padding-left: 20px;
+padding-right: 20px;
+}
+.qoutes p {
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+  
 .social {
     display: flex;
     justify-content: right;
-    padding: 10px;
+
     
 }
 .social span {
@@ -80,19 +116,48 @@ h1{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 30px 3px;
+    margin: 5px;
     cursor: pointer
 }
 .social span a {
     color: rgb(4, 0, 255);
     font-size: 15px;
     text-align: center;
-    margin-top: 3px
+ 
 }
 .social span a :hover{
     -ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.5); /* Safari 3-8 */
     transform: scale(1.5); 
+}
+.social1 {
+  display: flex;
+  justify-content: right;
+
+  
+}
+.social1 span {
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  cursor: pointer
+}
+.social1 span a {
+  color: rgb(253, 5, 199);
+  font-size: 15px;
+  text-align: center;
+
+}
+.social1 span a :hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
 }
 .fa {
     padding: 20px;
@@ -109,4 +174,337 @@ h1{
     transform: scale(2.0); 
 color: aqua;  
 }
+.frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: right;
+  }
+
+  .standard-btn {
+    text-decoration:none;
+    border: 2px solid #00ACEC;
+    padding:10px 20px 10px 20px;
+    border-radius:2px;
+    color:#00ACEC;
+    margin:5px;
+  }
+  .standard-btn:hover {
+    color:#FFFFFF;
+    background-color:#00acec;
+  }
+  
+  .btn-lg {
+    padding: 15px 40px 15px 40px;
+  }
+
+
+@keyframes fade{
+  from{
+    opacity:0.4;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+#slider{
+  margin:0 auto;
+  width:100%;
+  overflow:hidden;
+  
+}
+
+.slides{
+    height: 100%;
+  overflow:hidden;
+  animation-name:fade;
+  animation-duration:1s;
+  display:none;
+}
+
+img{
+  width:100%;
+  height: 100%;
+}
+
+#dot{
+  margin:0 auto;
+  text-align:center;
+}
+.dot{
+  display:inline-block;
+  border-radius:50%;
+  background:#d3d3d3;
+  padding:8px;
+  margin:10px 5px;
+}
+
+.active{
+  background:black;
+}
+
+@media (max-width:567px){
+  #slider{
+    width:100%;
+
+  }
+}
+.sarap{
+    width: 90px;
+    height: 90px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+ .navigation {
+     height: 55px;
+     background: linear-gradient(45deg, #4199fe, #74b4fe);
+}
+ .brand {
+     position: absolute;
+     padding-left: 20px;
+     float: left;
+     line-height: 55px;
+     text-transform: uppercase;
+     font-size: 1.4em;
+}
+ .brand a, .brand a:visited {
+     color: #ffffff;
+     text-decoration: none;
+}
+ .nav-container {
+     max-width: 1000px;
+     margin: 0 auto;
+}
+ nav {
+     float: right;
+}
+
+ul {
+  background: linear-gradient(45deg, #4199fe, #74b4fe);
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(45deg, #4199fe, #74b4fe);
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+li a {
+  color: rgb(255, 255, 255);
+}
+
+li:hover,
+li:focus-within {
+  background: rgb(2, 48, 255);
+  cursor: pointer;
+}
+
+li:focus-within a {
+  outline: none;
+}
+
+ul li ul {
+  background: linear-gradient(45deg, #4199fe, #74b4fe);
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+.layer1 {
+  position: relative;
+  
+}
+
+.layer1Container {
+
+  width: 85%;
+  height: 100%;
+  border-radius: 1.5em;
+  margin: 5em auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 4, 255, 0.589);
+  box-shadow: 0 0 2em rgb(69, 69, 69);
+}
+
+.layer1Left {
+  color: white;
+  margin: 3em 2em 3em 5em;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
  
+}
+.greetings {
+  font-size: 2.2em;
+  text-shadow: 0 0 0.8em rgb(255, 255, 255);
+  text-align: center;
+  font-family: "kawashiro";
+
+}
+
+.description {
+  margin-top: 1em;
+  font-size: 1.1em;
+  line-height: 1.4em;
+  text-align: justify;
+}
+
+.layer1Right {
+  width: 50vw;
+  margin: 3em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.layer1Image {
+  width: 35vw;
+  
+}
+
+.layer1Caption {
+  color: white;
+  margin-top: 0.5em;
+  font-size: 1.1em;
+}
+
+.layer1Source {
+  color: white;
+}
+
+.layer2Bg {
+  background-image: linear-gradient(rgb(8, 3, 247),rgb(10, 1, 139)); 
+  margin-top: 5em;
+}
+
+.layer2Content {
+  padding-top: 1em;
+}
+
+.layer2Heading {
+  font-size: 2em;
+  text-align: center;
+  color: white;
+  margin: 0.5em 1em 1.5em 1em;
+  font-family: "kamishirasawa";
+
+}
+
+.layer2InfoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 2.5em;    
+  flex-wrap: wrap;
+}
+
+.gameContainer, .fanartContainer, .musicContainer, .heyMisterContainer, .fumoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0px;
+}
+
+.gameImage, .fanartImage, .musicVideo, .heyMisterImage, .fumoImage {
+  width: 12em;
+  height: 14em;
+  object-fit: cover;
+  border: 0.3em solid rgb(255, 255, 255);
+  border-radius: 1.5em;
+  box-shadow: 0 10px 30px black;
+  transition: 0.3s;
+  margin: -0.5em -1em -1em -1em;
+}
+
+.gameImage:hover, .fanartImage:hover, .musicVideo:hover, .heyMisterImage:hover, .fumoImage:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgb(2, 173, 164);
+}
+
+.fanartSource {
+  color: white;
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: -2em;
+}
+
+.linkI {
+  margin: 1em 2em 0 2em;
+  border-radius: 1.5em;
+}
+
+.gameSubtext, .fanartSubtext, .musicSubtext, .heyMisterSubtext, .fumoSubtext {
+  text-align: center;
+  color: white;
+  font-size: 1.7em;
+  margin: 1em 0 1em 0;
+  font-family: "lunatic";
+  z-index: 2;
+}
+
+.stuff {
+  font-style: italic;
+}
+header{
+  background-image: url("../MyWebsite/recipes/main.jpeg");
+}
+.scrolling-box {
+  background-color: #eaeaea;
+  display: block;
+  width: 500px;
+  height: 500px;
+  padding: 1em;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+.scrolling-box section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.layer1Container1 {
+
+  width: 85%;
+  height: 100%;
+  border-radius: 1.5em;
+  margin: 2em auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
